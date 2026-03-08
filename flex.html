@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .box {
+            border: 2px solid tan;
+            padding: 10px;
+            background-color: aquamarine;
+        }
+
+        .title-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .title {
+            text-align: center;
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            border: 2px solid green;
+        }
+
+        @media screen and (max-width:576px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex Layout</h1>
+    <div class="container">
+        <div class="box">
+            <h4>box-1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, et quaerat rerum quia laboriosam
+                nemo. Perferendis blanditiis aperiam, sapiente quasi commodi delectus placeat porro incidunt quaerat
+                distinctio id quam assumenda.</p>
+        </div>
+        <div class="box">
+            <h4>box-2</h4>
+            <p>Asperiores debitis, sint soluta recusandae hic autem omnis vero odio repudiandae expedita animi assumenda
+                fuga harum aliquid beatae sed, quis voluptas officiis dicta, nihil architecto quae illum. Ipsum, aperiam
+                fugiat!</p>
+        </div>
+    </div>
+    <div class="title-container">
+        <div class="title">title-1</div>
+        <div class="title">title-2</div>
+        <div class="title">title-3</div>
+        <div class="title">title-4</div>
+        <div class="title">title-5</div>
+        <div class="title">title-6</div>
+        <div class="title">title-7</div>
+        <div class="title">title-8</div>
+        <div class="title">title-9</div>
+        <div class="title">title-10</div>
+    </div>
+
+</body>
+
+</html>
